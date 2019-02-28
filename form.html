@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Вязание на заказ</title>
+</head>
+<body>
+  <header class="page-header">
+      <a class="page-header__logo" href="" >
+        <img class="page-header__logo-image" src="" alt="" >
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__search"href="">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__shopping-cart" href="">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин «Мишка» – лучшие аксессуары и игрушки</h1>
+
+      <section class="order">
+        <h2 class="order__title">Вязание на заказ</h2>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <form action="" class="order__form form-order">
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">Тип</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="interior-accessories">
+                  <input class="visually-hidden form-order__input form-order__input--radio" id="interior-accessories" type="radio" name="accessory">
+                  <span class="radio-indicator"></span>
+                  Аксессуар для интерьера
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="childrens-toy">
+                  <input class="visually-hidden form-order__input form-order__input--radio" id="childrens-toy" type="radio" name="toy">
+                  <span class="radio-indicator"></span>
+                  Детская игрушка
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">Цвет</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="white">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="white" type="checkbox" name="white" checked>
+                  <span class="checkbox-indicator"></span>
+                  Белый
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="grey">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="grey" type="checkbox" name="grey" checked>
+                  <span class="checkbox-indicator"></span>
+                  Серый
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="tiffany">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="tiffany" type="checkbox" name="tiffany">
+                  <span class="checkbox-indicator"></span>
+                  «Тиффани»
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="black">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="black" type="checkbox" name="black">
+                  <span class="checkbox-indicator"></span>
+                  Черный
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="pink">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="pink" type="checkbox" name="pink">
+                  <span class="checkbox-indicator"></span>
+                  Розовый
+                </label>
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="orange">
+                  <input class="visually-hidden form-order__input form-order__input--checkbox" id="orange" type="checkbox" name="orange">
+                  <span class="checkbox-indicator"></span>
+                  Оранжевый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">Фио</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="first-name">Имя:</label>
+                <input class="form-order__input form-order__input--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="last-name">Фамилия:</label>
+                <input class="form-order__input form-order__input--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form-order__item">
+                <label class="form-order__label" for="patronymic">Отчество:</label>
+                <input class="form-order__input form-order__input--text" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">Тел</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="phone">Телефон:</label>
+                <input class="form-order__input form-order__input--text" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">e-mail</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="email">Почта:</label>
+                <input class="form-order__input form-order__input--text" id="email" type="text" name="email" placeholder="Ваш Email*">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__group-option">
+            <legend class="form-order__legend">Доп</legend>
+            <ul class="form-order__list">
+              <li class="form-order__item">
+                <label class="form-order__label" for="wishes">Пожелания:</label>
+                <input class="form-order__input form-order__input--text" id="wishes" type="text" name="wishes" placeholder="Опишите все ваши пожелания к заказу">
+              </li>
+            </ul>
+          </fieldset>
+
+          <small class="form-order__comment">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+          <p class="form-order__submit-row">
+            <button class="form-order__submit button" type="submit" name="button">Отправить заказ</button>
+          </p>
+        </form>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo logo">
+        <a class="logo__button" href="">
+          <img class="logo__img" src="" alt="логотип Мишка">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__img" src="" alt="HTML Academy">
+          </a>
+        </div>
+    </footer>
+
+</body>
+</html>
