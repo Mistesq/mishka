@@ -1,0 +1,25 @@
+
+
+
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .reviews__write {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .reviews__wrapper {
+    order: 3;
+  }
+}

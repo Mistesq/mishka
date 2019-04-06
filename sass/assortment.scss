@@ -1,0 +1,20 @@
+.assortment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  // min-height: 460px;
+}
+
+@media (min-width: $tablet-width) {
+  .assortment {
+    min-width: 668px;
+    // min-height: 645px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .assortment {
+    min-width: 1050px;
+  }
+}

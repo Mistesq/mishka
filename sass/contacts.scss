@@ -1,0 +1,20 @@
+.contacts__field {
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__table-body {
+    display: flex;
+  }
+
+  .contacts__table-row {
+   width: 334px;
+ }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts__table-body {
+    flex-direction: column;
+  }
+}

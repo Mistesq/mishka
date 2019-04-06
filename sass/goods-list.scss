@@ -1,0 +1,33 @@
+.goods-list {
+  @include reset-list;
+}
+
+.goods-list__item {
+  padding: 30px;
+}
+
+.goods-list__link {
+  font-weight: bold;
+  color: $white;
+}
+
+.goods-list__item--interior-items {
+  background: $azure;
+}
+
+.goods-list__item--kids-toys {
+  background: $dark-azure;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    min-width: 1050px;
+  }
+}

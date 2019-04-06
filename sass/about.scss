@@ -1,0 +1,29 @@
+.about__list {
+  @include reset-list;
+}
+
+.about__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__list {
+    width: 700px;
+  }
+
+  .about__item {
+    width: 350px;
+  }
+}

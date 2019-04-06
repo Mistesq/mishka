@@ -5,30 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-      <a class="page-header__logo" href="" >
-        <img class="page-header__logo-image" src="" alt="" >
-      </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="">Каталог товаров</a>
+              <a class="site-list__link" href="">
+                <img class="page-header__logo-image" src="" alt="Лого Мишка">
+              </a>
             </li>
             <li class="site-list__item">
-              <a href="">Вязание на заказ</a>
+              <a class="site-list__link" href="">Каталог товаров</a>
             </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search"href="">Поиск по сайту</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Вязание на заказ</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__shopping-cart" href="">Корзина: пока пуста</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__search"href="">Поиск по сайту</a>
             </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__shopping-cart" href="">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link site-list__link--small">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link site-list__link--small">Распродажи</a>
+            </li>
+            <li class="site-list__item site-list__item--small">Бесплатная доставка по России</li>
           </ul>
         </div>
       </nav>
@@ -45,11 +53,11 @@
         <img class="assortment__image" src="" alt="">
       </header>
       <ul class="assortment__list goods-list">
-        <li class="goods-list__item">
-          <a href="">Предметы интерьера</a>
+        <li class="goods-list__item goods-list__item--interior-items">
+          <a class="goods-list__link" href="">Предметы интерьера</a>
         </li>
-        <li class="goods-list__item">
-          <a href="">Детские игрушки</a>
+        <li class="goods-list__item goods-list__item--kids-toys">
+          <a class="goods-list__link" href="">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -85,7 +93,9 @@
         </tr>
       </table>
       <b class="featured__cost">Цена: 990 руб.</b>
-      <a class="featured__to-order button" href="#">Показать все</a>
+      <p>
+        <a class="featured__to-order button" href="#">Заказать</a>
+      </p>
       <img class="featured__img" src="" alt="Вязаные корзины">
     </section>
 
@@ -116,9 +126,8 @@
     </section>
 
     <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы</h2>
-        <a class="reviews__write button" href="#">Написать</a>
         <div class="reviews__list  slider__list">
           <blockquote class="reviews__item  slider__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -127,39 +136,44 @@
             <span class="reviews__mail">@misssssiskras</span>
           </blockquote>
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <div class="reviews__toggles slider__toggles">
           <button class="reviews__prev" type="button">Предыдущий отзыв</button>
           <button class="reviews__next" type="button">Следующий отзыв</button>
-        </p>
+        </div>
       </div>
+      <a class="reviews__write button" href="#">Написать</a>
     </section>
 
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <img class="contacts__img-flag" src="" alt="флаг">
-      <table class="contacts__list">
-        <tr>
-          <td class="contacts__field">
-            e-mail:
-          </td>
-          <td class="featured__value">
-            <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="contacts__field">
-            адрес:
-          </td>
-          <td class="featured__value">
-            г. Санкт-Петербург,<br>
-            ул. Большая<br>
-            Конюшенная, <br>
-            д. 19/8, офис 101<br>
-          </td>
-        </tr>
+      <table class="contacts__table">
+        <tbody class="contacts__table-body">
+          <tr class="contacts__table-row">
+            <td class="contacts__field">
+              e-mail:
+            </td>
+            <td class="featured__value">
+              <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr class="contacts__table-row">
+            <td class="contacts__field">
+              адрес:
+            </td>
+            <td class="featured__value">
+              г. Санкт-Петербург,<br>
+              ул. Большая<br>
+              Конюшенная, <br>
+              д. 19/8, офис 101<br>
+            </td>
+          </tr>
+        </tbody>
       </table>
       <img class="contacts__map" src="" alt="карта">
-      <a class="featured__write-to-us button" href="#">Напишите нам</a>
+      <p>
+        <a class="featured__write-to-us button" href="#">Напишите нам</a>
+      </p>
     </section>
 
   </main>
