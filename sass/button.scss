@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 2px solid $dark-grey;
+  box-sizing: border-box;
+
+  color: $dark-grey;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+
+  background: $white;
+  cursor: pointer;
+}

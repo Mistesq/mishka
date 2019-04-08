@@ -1,0 +1,42 @@
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__item {
+    display: block;
+  }
+
+
+  .catalog__container-img {
+    height: 335px;
+    position: relative;
+    float: left;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    flex-direction: row;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}

@@ -4,31 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог товаров магазина "Мишка"</title>
 </head>
 <body>
   <header class="page-header">
-      <a class="page-header__logo" href="" >
-        <img class="page-header__logo-image" src="" alt="" >
-      </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="">Каталог товаров</a>
+              <a class="site-list__link" href="index.html">
+                <img class="page-header__logo-image" src="" alt="Лого Мишка">
+              </a>
             </li>
             <li class="site-list__item">
-              <a href="">Вязание на заказ</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search"href="">Поиск по сайту</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__shopping-cart" href="">Корзина: пока пуста</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__search"href="">Поиск по сайту</a>
             </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__shopping-cart" href="">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link site-list__link--small">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link site-list__link--small">Распродажи</a>
+            </li>
+            <li class="site-list__item site-list__item--small">Бесплатная доставка по России</li>
           </ul>
         </div>
       </nav>
@@ -42,7 +50,7 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__container-img">
-              <img class="catalog__img" src="" alt="">
+              <img class="catalog__img" src="" alt="Зайчик-попрыгайчик">
             </div>
             <h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
             <p class="catalog__item-info">Рост 30 см, вес 200 г</p>
@@ -52,7 +60,7 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__container-img">
-              <img class="catalog__img" src="" alt="">
+              <img class="catalog__img" src="" alt="Корзинка для белья">
             </div>
             <h2 class="catalog__item-title">Корзинка для белья</h2>
             <p class="catalog__item-info">Диаметр 15 см, высота 10 см</p>
@@ -62,7 +70,7 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__container-img">
-              <img class="catalog__img" src="" alt="">
+              <img class="catalog__img" src="" alt="Большая корзинка для игрушек">
             </div>
             <h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
             <p class="catalog__item-info">Диаметр 30 см, высота 30 см</p>
@@ -74,11 +82,12 @@
       </section>
 
       <section class="demonstration">
-        <div class="demonstration_container-title">
+        <div class="demonstration__container-title">
           <h2 class="demonstration__title">Процесс производства</h2>
-          <img src="" alt="камера">
+          <img class="demonstration__title-icon" src="" alt="камера">
         </div>
         <div class="demonstration__video-box">
+          <img src="" alt="Видео">
           <video src="videofile.ogg" autoplay poster="posterimage.jpg">
           </video>
         </div>
