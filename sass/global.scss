@@ -7,6 +7,12 @@ body {
   color: $dark-grey;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -32,4 +38,16 @@ h2 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .body--dark-grey {
+    background: linear-gradient(to bottom, $white 71px, rgba(0, 0, 0, 0.1) 71px, rgba(0, 0, 0, 0.1) 72px, $gray 72px, $gray 200px, $white 200px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body--dark-grey {
+    background: linear-gradient(to bottom, $white 71px, rgba(0, 0, 0, 0.1) 71px, rgba(0, 0, 0, 0.1) 72px, $gray 72px, $gray 200px, $white 200px);
+  }
 }

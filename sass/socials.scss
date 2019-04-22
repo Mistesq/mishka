@@ -1,0 +1,42 @@
+.socials {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+
+  &--instagram {
+    padding-left: 2px;
+    padding-top: 5px;
+  }
+
+  &--twitter {
+    padding-top: 6px;
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials__link-icon {
+    &:hover {
+      fill: $green-hover-two;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

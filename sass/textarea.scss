@@ -1,0 +1,42 @@
+.textarea {
+  margin-top: -10px;
+  margin-bottom: 6px;
+}
+
+.textarea__control {
+  font-size: 17px;
+  line-height: 18px;
+  width: 260px;
+  height: 142px;
+  padding: 13px;
+  color: $dark-grey;
+  resize: vertical;
+  border: 2px solid $dark-grey;
+
+  &:hover {
+    border: 2px solid $main-color;
+  }
+
+  &:focus {
+    border: 2px solid $main-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    margin: 0;
+    width: 100%;
+  }
+
+  .textarea__control {
+    width: 100%;
+    font-size: 19px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea__control {
+    width: 700px;
+  }
+}

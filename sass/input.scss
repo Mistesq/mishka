@@ -1,0 +1,91 @@
+.input {
+  position: relative;
+  margin-top: -5px;
+}
+
+.input__icon {
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  opacity: 0.2;
+}
+
+.input__control {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $dark-grey;
+  width: 100%;
+  padding: 15px 0;
+  padding-right: 40px;
+  margin-bottom: 28px;
+  border: none;
+  border-bottom: 2px solid $black;
+  background-color: inherit;
+
+  &:hover {
+    border-bottom: 2px solid $main-color;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $main-color;
+  }
+}
+
+.input__control[type="tel"] {
+  font-size: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .input__control {
+    font-size: 19px;
+    line-height: 20px;
+    padding-left: 16px;
+  }
+
+  .input__control[type="tel"],
+  .input__control[type="email"] {
+    background-color: $gray;
+  }
+
+  .input__icon {
+    right: 24px;
+    top: 12px;
+  }
+
+  .input__label {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input {
+    width: auto;
+  }
+
+  .input__control {
+    min-width: 575px;
+
+    &:hover + .input__icon,
+    &:focus + .input__icon {
+      opacity: 1;
+      fill: $azure;
+    }
+  }
+
+  .input__control[type="tel"],
+  .input__control[type="email"] {
+    min-width: 700px;
+  }
+
+  .input__icon {
+    right: 6px;
+    top: 10px;
+  }
+}

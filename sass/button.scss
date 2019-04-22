@@ -1,14 +1,38 @@
 .button {
-  display: inline-block;
-  padding: 15px 25px;
-  border: 2px solid $dark-grey;
+  display: block;
+  padding: 10px;
+  vertical-align: middle;
   box-sizing: border-box;
 
-  color: $dark-grey;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 27px;
   font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-grey;
 
   background: $white;
+  border: 3px solid $dark-grey;
+  transition: all 0.07s linear;
   cursor: pointer;
+
+
+  &:hover {
+    background-color: $dark-grey;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--action {
+    background-color: $seafoam-blue;
+    border: none;
+    color: $white;
+
+    &:hover {
+      background-color: $dark-azure;
+    }
+  }
 }

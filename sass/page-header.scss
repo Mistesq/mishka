@@ -1,10 +1,13 @@
 .page-header {
   min-height: 80px;
+
+
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 140px;
+
+    width: auto;
   }
 }
 
@@ -15,23 +18,8 @@
 //   }
 // }
 
-.page-footer__logo {
-  display: block;
-}
+
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    padding: 0 50px;
-  }
-  .page-footer__logo-image {
-    width: 113px;
-    height: 46px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer__logo-image {
-    width: 148px;
-    height: 73px;
-  }
 }

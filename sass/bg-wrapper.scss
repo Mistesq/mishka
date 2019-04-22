@@ -1,0 +1,71 @@
+.bg-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 6px;
+    bottom: -25px;
+  }
+
+  &--fill::after {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .bg-wrapper {
+
+
+  }
+
+  .bg-wrapper::after {
+    height: 15px;
+    bottom: 0px;
+  }
+
+  .bg-wrapper--fill {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      width: 100%;
+      height: 24px;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bg-wrapper {
+    &--fill::before {
+      height: 34px;
+    }
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      bottom: 50px;
+      left: 50%;
+      margin-left: -525px;
+      background-position-x: 26px;
+    }
+
+    &--reviews::after {
+      bottom: -68px;
+    }
+  }
+}
