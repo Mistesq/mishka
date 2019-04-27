@@ -1,0 +1,26 @@
+.logo__link {
+  display: block;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__link-image {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__link-image {
+    width: 149px;
+    height: 72px;
+  }
+
+  .logo__link:hover {
+    opacity: 0.6;
+  }
+
+  .logo__link:active {
+    opacity: 0.3;
+  }
+}

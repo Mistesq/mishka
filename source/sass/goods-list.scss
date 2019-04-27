@@ -1,0 +1,140 @@
+.goods-list {
+  @include reset-list;
+  width: 100%;
+}
+
+.goods-list__item {
+  // width: 100%;
+}
+
+.goods-list__link {
+  display: block;
+  padding: 28px;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+  font-weight: bold;
+  box-sizing: border-box;
+
+}
+
+.goods-list__item--interior-items {
+  background: $azure;
+}
+
+.goods-list__item--kids-toys {
+  background: $dark-azure;
+}
+
+.goods-list__text-wrapper {
+  position: relative;
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
+
+  &--interior-items::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 6px;
+    top: -6px;
+    opacity: 0.5;
+  }
+
+  &--kids-toys::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -3px;
+    top: -7px;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .goods-list__item {
+    width: 50%;
+  }
+
+  .goods-list__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 27px 190px 42px 35px;
+  }
+
+
+  .goods-list__text-wrapper--interior-items::before {
+      right: -153px;
+      top: 3px;
+  }
+
+  .goods-list__text-wrapper--kids-toys::before {
+      right: -156px;
+      top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    max-width: 1050px;
+  }
+
+  .goods-list__link {
+    min-width: 525px;
+    font-size: 20px;
+    padding-right: 350px;
+    padding-left: 36px;
+  }
+
+  .goods-list__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .goods-list__item:hover {
+    z-index: 0;
+    transform: translateY(-5px);
+
+    &:first-child {
+      background-color: $green-hover;
+    }
+
+    &:last-child {
+      background-color: $green-hover-two;
+    }
+  }
+
+  .goods-list__text-wrapper--interior-items::before {
+    right: -314px;
+    top: 3px;
+  }
+
+  .goods-list__text-wrapper--kids-toys::before {
+    right: -314px;
+    top: 4px;
+  }
+
+  .goods-list__link:hover > .goods-list__text-wrapperr::before {
+    opacity: 0.7;
+  }
+
+  .goods-list__link:active > .goods-list__text-wrapper::before {
+    opacity: 0.3;
+  }
+}

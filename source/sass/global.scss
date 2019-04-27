@@ -1,0 +1,65 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $dark-grey;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+h2 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-wrapper {
+  background-color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: linear-gradient(to bottom, $white 82px, rgba(0, 0, 0, 0.1) 82px, rgba(0, 0, 0, 0.1) 83px, $light-gray 83px, $light-gray 200px, $white 200px);
+  }
+
+  .body--dark-grey {
+    background: linear-gradient(to bottom, $white 82px, rgba(0, 0, 0, 0.1) 82px, rgba(0, 0, 0, 0.1) 83px, $gray 83px, $gray 200px, $white 200px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: linear-gradient(to bottom, $white 88px, rgba(0, 0, 0, 0.1) 88px, rgba(0, 0, 0, 0.1) 89px, $light-gray 89px, $light-gray 200px, $white 200px);
+  }
+
+  .body--dark-grey {
+    background: linear-gradient(to bottom, $white 88px, rgba(0, 0, 0, 0.1) 88px, rgba(0, 0, 0, 0.1) 89px, $gray 89px, $gray 200px, $white 200px);
+  }
+}

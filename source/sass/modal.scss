@@ -1,0 +1,80 @@
+.modal {
+  display: none;
+  width: 320px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 940px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 110;
+  background-color: $white;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25), 0 0 0 1px #c6c6c6;
+
+  &--catalog {
+    top: 1117px;
+  }
+}
+
+.modal--show {
+  display: block;
+  animation-name: modal--show;
+  animation-duration: 0.6s;
+}
+
+@keyframes modal--show {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal__button {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    padding-top: 45px;
+    padding-left: 106px;
+    padding-right: 106px;
+    padding-bottom: 50px;
+    top: 940px;
+    margin-left: -283px;
+
+    &--catalog {
+      top: 1078px;
+      padding-bottom: 46px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .modal {
+    padding-bottom: 48px;
+    top: 1114px;
+
+    &--catalog {
+      top: 747px;
+    }
+  }
+}
