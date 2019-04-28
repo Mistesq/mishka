@@ -10,5 +10,5 @@ node_modules/
 build/
 .history/
 npm-debug.*
-css/*.css
+source/css/*.css
 Thumbs.db

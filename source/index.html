@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Мишка - интернет магазин вязанных изделий</title>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -181,45 +183,42 @@
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
-      </div>
       <a class="reviews__write-button button" href="#">Написать</a>
     </section>
 
-    <!-- <div class="bg-wrapper bg-wrapper--reviews"> -->
-      <section class="contacts">
-        <div class="contacts__header-container">
-          <h3 class="contacts__title">Контакты</h3>
-          <table class="contacts__table">
-            <tbody class="contacts__table-body">
-              <tr class="contacts__table-row">
-                <td class="contacts__table-d">e-mail:</td>
-                <td class="contacts__table-d contacts__table-d--under"><a class="contacts__table-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-              </tr>
-              <tr class="contacts__table-row">
-                <td class="contacts__table-d">адрес:</td>
-                <td class="contacts__table-d contacts__table-d--wide">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
-              </tr>
-              </tbody>
-            </table>
+    <section class="contacts">
+      <div class="contacts__header-container">
+        <h3 class="contacts__title">Контакты</h3>
+        <table class="contacts__table">
+          <tbody class="contacts__table-body">
+            <tr class="contacts__table-row">
+              <td class="contacts__table-d">e-mail:</td>
+              <td class="contacts__table-d contacts__table-d--under"><a class="contacts__table-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr class="contacts__table-row">
+              <td class="contacts__table-d">адрес:</td>
+              <td class="contacts__table-d contacts__table-d--wide">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</td>
+            </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="contacts__map-wrapper">
+        <iframe class="contacts__map" title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002815!2d30.32085871566159!3d59.93871916905466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1540041694861" height="457" style="border:0; position: absolute;" allowfullscreen=""></iframe>
+        <div class="contacts__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </div>
-        <div class="contacts__map-wrapper">
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002815!2d30.32085871566159!3d59.93871916905466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1540041694861" height="457" width="100%" style="border:0; position: absolute;" allowfullscreen=""></iframe>
-          <div class="contacts__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-            </picture>
-          </div>
-        </div>
-        <div class="contacts__button-wrapper">
-          <a href="form.html" class="contacts__button button">Напишите нам</a>
-        </div>
-      </section>
-    <!-- </div> -->
+      </div>
+      <div class="contacts__button-wrapper">
+        <a href="form.html" class="contacts__button button">Напишите нам</a>
+      </div>
+    </section>
 
   </main>
   <div class="footer-wrapper">

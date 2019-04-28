@@ -91,7 +91,7 @@ gulp.task("svgsprite", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/*.ttf",
+    "source/fonts/*.{woff,woff2}",
     "source/img/*",
     "source/js/*.js"
   ], {
